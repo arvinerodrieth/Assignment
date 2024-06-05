@@ -1,0 +1,146 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: rgb(194, 255, 194);   
+     display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    font-family: 'Roboto', sans-serif;
+}
+
+.container {
+    background-color: rgb(234, 181, 255);
+    display: flex;
+    flex-direction: column;
+    padding: 40px;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    width: 80%;
+    max-width: 500px;
+    border: 5px solid rgb(114, 111, 255);
+    border-radius: 20px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
+    backdrop-filter: blur(10px);
+}
+
+
+
+label{
+    
+    position: relative;
+    top: 30%;
+    left: 13%;
+    height: 60px;
+    width: 400px;
+    font-size: 50px;
+    font-family: monospace;
+    font-weight: bold;
+    color: rgb(160, 0, 0);
+    text-align: start;
+}
+p{
+    font-size: 20px;
+    font-weight: bold;
+    color: rgb(160, 0, 0);
+    text-align: center; 
+}
+
+
+
+#url{
+    padding: 10px;
+    border-radius: 30px;
+    border: none;
+    width: 60%;
+}
+
+#longUrlInput {
+    padding: 15px;
+    border-radius: 10px;
+    border: 2px solid #bdc3c7;
+    width: 300px;
+    height: 100px;
+    text-align: center;
+    font-size: 1rem;
+    outline: none;
+    background: #ecf0f1;
+    color: #2c3e50;
+    transition: border 0.3s, box-shadow 0.3s;
+}
+
+#longUrlInput::placeholder {
+    font-size: 1rem;
+    color: #95a5a6;
+}
+
+#longUrlInput:focus {
+    border: 2px solid #3498db;
+    box-shadow: 0 0 10px #3498db;
+}
+
+button {
+    padding: 12px;
+    width: 50%;
+    border-radius: 50px;
+    border: none;
+    background-color: #e74c3c;
+    color: white;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+button:hover {
+    background-color: #c0392b;
+}
+
+#result {
+    padding-top: 2rem;
+    text-align: center;
+    width: 100%;
+}
+
+#shortUrlOutput {
+    color: #fff;
+    font-size: 1.2rem;
+    word-wrap: break-word;
+}
+
+/* Media Queries */
+@media screen and (max-width: 500px) {
+    .container {
+        padding: 20px;
+    }
+
+    label {
+        font-size: 1.2rem;
+    }
+
+    #longUrlInput {
+        width: 100%;
+    }
+
+    button {
+        width: 70%;
+    }
+}
+
+@media screen and (max-width: 370px) {
+    label {
+        font-size: 1rem;
+    }
+
+    #longUrlInput {
+        width: 100%;
+    }
+
+    button {
+        width: 80%;
+    }
+}
